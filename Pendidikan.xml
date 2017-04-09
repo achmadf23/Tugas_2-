@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<loginstaffpendidikan xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Pendidkan.xsd">
+	<dosen>
+		<namadosen>Rizki</namadosen>
+		<nikdosen>11223344</nikdosen>
+		<alamat>Cijerokaso</alamat>
+		<kota>Bandung</kota>
+		<jk>Laki-Laki</jk>
+		<agama>Islam</agama>
+		<pekerjaan>dosen</pekerjaan>
+		<tl>Bandung</tl>
+		<email>rizkilex@gmail.com</email>
+		<kewarganegaraan>Indonesia</kewarganegaraan>
+		<tahunkerja>2014</tahunkerja>
+	</dosen>
+	
+	<mahasiswa>
+		<namamahasiswa>Ahmad</namamahasiswa>
+		<alamat>bandung</alamat>
+		<kontak>082209096767</kontak>
+		<jk>laki-laki</jk>
+		<agama>islam</agama>
+		<status>mahasiswa</status>
+		<tl>Jakarta</tl>
+		<email>achmad@gmail.com</email>
+		<umur>18 th</umur>
+		<jurusan>Teknik Informatika</jurusan>
+	</mahasiswa>
+	
+	<teknisi>
+		<namateknisi>Fahmy</namateknisi>
+		<alamat>SetiaBudi</alamat>
+		<kontak>082109097665</kontak>
+		<jk>laki-laki</jk>
+		<agama>islam</agama>
+		<pekerjaan>anggota teknisi</pekerjaan>
+		<tl>Subang</tl>
+		<email>fahmy@gmail.com</email>
+		<umur>23 th</umur>
+		<jabatan>teknisi</jabatan>
+	</teknisi>
+	
+	<satpam>
+		<nama>Jayson</nama>
+		<alamat>sarijadi</alamat>
+		<kontak>0823454321</kontak>
+		<jk>laki-laki</jk>
+		<agama>islam</agama>
+		<pekerjaan>satpam</pekerjaan>
+		<tl>Makasar</tl>
+		<email>jayson@gmail.com</email>
+		<umur>50 th</umur>
+		<jabatan>satpam</jabatan>
+	</satpam>
+	
+	<pemilikkantin>
+		<nama>Sindra</nama>
+		<alamat>sarimanah</alamat>
+		<kontak>082785635225</kontak>
+		<jk>perempuan</jk>
+		<agama>islam</agama>
+		<pekerjaan>pengusaha</pekerjaan>
+		<tl>bandung</tl>
+		<email>sindraimoet@gmail.com</email>
+		<umur>35 th</umur>
+		<hobi>memasak</hobi>
+		<beratbadan>75 kg</beratbadan>
+	</pemilikkantin>
+</loginstaffpendidikan>

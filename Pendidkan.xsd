@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+    <xs:element name="loginstaffpendidikan">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="dosen"/>
+                <xs:element ref="mahasiswa"/>
+                <xs:element ref="teknisi"/>
+                <xs:element ref="satpam"/>
+                <xs:element ref="pemilikkantin"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="dosen">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="namadosen"/>
+                <xs:element ref="nikdosen"/>
+                <xs:element ref="alamat"/>
+                <xs:element ref="kota"/>
+                <xs:element ref="jk"/>
+                <xs:element ref="agama"/>
+                <xs:element ref="pekerjaan"/>
+                <xs:element ref="tl"/>
+                <xs:element ref="email"/>
+                <xs:element ref="kewarganegaraan"/>
+                <xs:element ref="tahunkerja"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="namadosen" type="xs:NCName"/>
+    <xs:element name="nikdosen" type="xs:integer"/>
+    <xs:element name="kota" type="xs:NCName"/>
+    <xs:element name="kewarganegaraan" type="xs:NCName"/>
+    <xs:element name="tahunkerja" type="xs:integer"/>
+    <xs:element name="mahasiswa">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="namamahasiswa"/>
+                <xs:element ref="alamat"/>
+                <xs:element ref="kontak"/>
+                <xs:element ref="jk"/>
+                <xs:element ref="agama"/>
+                <xs:element ref="status"/>
+                <xs:element ref="tl"/>
+                <xs:element ref="email"/>
+                <xs:element ref="umur"/>
+                <xs:element ref="jurusan"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="namamahasiswa" type="xs:NCName"/>
+    <xs:element name="status" type="xs:NCName"/>
+    <xs:element name="jurusan" type="xs:string"/>
+    <xs:element name="teknisi">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="namateknisi"/>
+                <xs:element ref="alamat"/>
+                <xs:element ref="kontak"/>
+                <xs:element ref="jk"/>
+                <xs:element ref="agama"/>
+                <xs:element ref="pekerjaan"/>
+                <xs:element ref="tl"/>
+                <xs:element ref="email"/>
+                <xs:element ref="umur"/>
+                <xs:element ref="jabatan"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="namateknisi" type="xs:NCName"/>
+    <xs:element name="satpam">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="nama"/>
+                <xs:element ref="alamat"/>
+                <xs:element ref="kontak"/>
+                <xs:element ref="jk"/>
+                <xs:element ref="agama"/>
+                <xs:element ref="pekerjaan"/>
+                <xs:element ref="tl"/>
+                <xs:element ref="email"/>
+                <xs:element ref="umur"/>
+                <xs:element ref="jabatan"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="pemilikkantin">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="nama"/>
+                <xs:element ref="alamat"/>
+                <xs:element ref="kontak"/>
+                <xs:element ref="jk"/>
+                <xs:element ref="agama"/>
+                <xs:element ref="pekerjaan"/>
+                <xs:element ref="tl"/>
+                <xs:element ref="email"/>
+                <xs:element ref="umur"/>
+                <xs:element ref="hobi"/>
+                <xs:element ref="beratbadan"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="hobi" type="xs:NCName"/>
+    <xs:element name="beratbadan" type="xs:string"/>
+    <xs:element name="alamat" type="xs:NCName"/>
+    <xs:element name="jk" type="xs:NCName"/>
+    <xs:element name="agama" type="xs:NCName"/>
+    <xs:element name="pekerjaan" type="xs:string"/>
+    <xs:element name="tl" type="xs:NCName"/>
+    <xs:element name="email">
+    	<xs:simpleType>
+    		<xs:restriction base="xs:string">
+    			<xs:pattern value=".+@gmail.com"></xs:pattern>
+    		</xs:restriction>
+    	</xs:simpleType>
+    </xs:element>
+    <xs:element name="kontak" type="xs:integer"/>
+    <xs:element name="umur" type="xs:string"/>
+    <xs:element name="jabatan" type="xs:NCName"/>
+    <xs:element name="nama" type="xs:NCName"/>
+</xs:schema>
